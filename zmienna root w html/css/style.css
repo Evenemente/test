@@ -1,0 +1,54 @@
+:root {
+   --main-color: royalblue; 
+}
+
+/* Zmienne tworzymy w rootcie lub htmlu */
+
+/* Aby skorzystać z tyhc zmiennych uzyj klawiszow ctrl + h  */
+
+/* Najpierw piszemy var() a w nawiasach nasza zmienna */
+
+
+body{
+    background-color: cadetblue;
+}
+
+.box{
+    width: 800px;
+    height: 200px;
+    background-color: var(--main-color);
+}
+
+.color1{
+    background-color: #fff;
+}
+.color2{
+    background-color: var(--main-color);
+}
+.color3{
+    background-color: #fff;
+}
+.color4{
+    background-color: var(--main-color);
+}
+.color5{
+    background-color: #fff;
+}
+.color6{
+    background-color: var(--main-color);
+}
+.color7{
+    background-color: #fff;
+}
+.color8{
+    background-color: var(--main-color);
+}
+.color9{
+    background-color: #fff;
+}
+.color10{
+    background-color: var(--main-color);
+}
+
+
+

@@ -1,0 +1,168 @@
+body {
+	overflow: hidden;
+}
+
+.sky {
+	position: relative;
+	height: 60vh;
+	background-color: royalblue;
+	animation: sky 6s linear 1;
+}
+
+.sun {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	background-color: gold;
+	box-shadow: 0 0 70px orange;
+	animation: sun 6s linear 1;
+}
+
+.ground {
+	position: relative;
+	height: 450px;
+	background-color: grey;
+}
+
+.grass {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 200px;
+	width: 100%;
+	background-color: greenyellow;
+}
+
+.road {
+	position: absolute;
+	top: 25px;
+	left: 0;
+	height: 150px;
+	width: 100%;
+	background-color: #333;
+}
+
+.car {
+	position: absolute;
+	top: -15px;
+	left: 200px;
+	height: 70px;
+	width: 150px;
+	background-color: tomato;
+	border-radius: 15px;
+	animation: car 6s linear 1;
+}
+
+.car::before,
+.car::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 40px;
+	height: 35px;
+	background-color: tomato;
+}
+
+.car::after {
+	right: -20px;
+	border-top-right-radius: 10px;
+}
+
+.car::before {
+	left: -20px;
+	border-top-left-radius: 10px;
+}
+
+.wheel {
+	position: absolute;
+	bottom: -10px;
+	width: 35px;
+	height: 35px;
+	background-color: black;
+	border: 2px dashed #999;
+	border-radius: 50%;
+	animation: wheel 2s linear infinite;
+}
+
+.front-wheel {
+	right: 8px;
+	z-index: 1;
+}
+
+.rear-wheel {
+	left: 8px;
+}
+
+.window {
+	position: absolute;
+	top: 5px;
+	width: 50px;
+	height: 30px;
+	background-color: blue;
+}
+
+.front-window {
+	right: 0;
+	border-top-right-radius: 10px;
+}
+.rear-window {
+	left: 0;
+	border-top-left-radius: 10px;
+}
+
+@keyframes sun {
+	0% {
+		top: 1000px;
+	}
+
+	40% {
+		top: 100px;
+	}
+
+	60% {
+		top: 100px;
+	}
+
+	100% {
+		top: 1000px;
+	}
+}
+
+@keyframes sky {
+	0% {
+		background-color: black;
+	}
+
+	40% {
+		background-color: royalblue;
+	}
+
+	60% {
+		background-color: royalblue;
+	}
+
+	100% {
+		background-color: black;
+	}
+}
+
+@keyframes car {
+	from {
+		left: -500px;
+	}
+	to {
+		left: 2500px;
+	}
+}
+
+@keyframes wheel {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}

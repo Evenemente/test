@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  color: #fff;
+  background-color: #333;
+  overflow: hidden;
+}
+
+div {
+  width: 300px;
+  height: 300px;
+}
+
+.square {
+  background-color: tomato;
+  -webkit-animation: square 4s;
+          animation: square 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: lime;
+  -webkit-animation-name: circle;
+          animation-name: circle;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+@-webkit-keyframes square {
+  0% {
+    background-color: tomato;
+    width: 300px;
+    height: 300px;
+  }
+  50% {
+    background-color: tomato;
+    width: 600px;
+    height: 300px;
+  }
+  100% {
+    background-color: gold;
+    width: 300px;
+    height: 600px;
+  }
+}
+
+@keyframes square {
+  0% {
+    background-color: tomato;
+    width: 300px;
+    height: 300px;
+  }
+  50% {
+    background-color: tomato;
+    width: 600px;
+    height: 300px;
+  }
+  100% {
+    background-color: gold;
+    width: 300px;
+    height: 600px;
+  }
+}
+@-webkit-keyframes circle {
+  from {
+    background-color: lime;
+  }
+  to {
+    background-color: royalblue;
+  }
+}
+@keyframes circle {
+  from {
+    background-color: lime;
+  }
+  to {
+    background-color: royalblue;
+  }
+}/*# sourceMappingURL=style.css.map */

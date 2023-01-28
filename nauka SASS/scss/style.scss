@@ -1,0 +1,23 @@
+$width: 400px;
+$height: 100px;
+$background-color: royalblue;
+$background-color2: red;
+$background-color3: lime;
+
+.blue{
+    background-color: $background-color;
+    height: $height;
+    width: $width;
+}
+
+.red{
+    background-color: $background-color2;
+    height: $height;
+    width: $width;
+}
+
+.lime{
+    background-color: $background-color3;
+    height: $height;
+    width: $width;
+}

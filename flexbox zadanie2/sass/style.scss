@@ -1,0 +1,50 @@
+body {
+	background-color: #333;
+}
+
+.square {
+	width: 300px;
+	height: 300px;
+	font-size: 50px;
+	border: 3px solid black;
+    text-align: center;
+}
+
+.one{
+    background-color: tomato;
+}
+
+.two{
+    background-color: lime;
+}
+
+.three{
+    background-color: royalblue;
+}
+
+.four{
+background-color: gold;
+}
+
+.first {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.second{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.third{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}

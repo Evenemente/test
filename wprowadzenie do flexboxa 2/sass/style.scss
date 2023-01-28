@@ -1,0 +1,32 @@
+body {
+	background-color: #333;
+}
+
+section {
+	display: flex;
+    flex-direction: row-reverse;
+	justify-content: center;
+    align-items: center;
+	font-size: 50px;
+    height: 100vh;
+}
+
+.square {
+	width: 20%;
+	height: 200px;
+	line-height: 200px;
+	text-align: center;
+}
+
+.one {
+	background-color: gold;
+}
+.two {
+	background-color: lime;
+}
+.three {
+	background-color: royalblue;
+}
+.four {
+	background-color: tomato;
+}

@@ -1,0 +1,43 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #333;
+}
+
+section {
+	display: flex;
+}
+
+.square {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	height: 300px;
+	font-size: 50px;
+	background-color: gold;
+	border: 3px solid black;
+}
+
+.first {
+	justify-content: center;
+	align-items: center;
+}
+
+
+.second{
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.third{
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
